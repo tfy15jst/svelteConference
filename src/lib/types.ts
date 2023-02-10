@@ -16,6 +16,7 @@ export type Day = {
     description: string;
     date: string;
     talks: Talk[];
+    speakers: Speaker[];
 }
 
 export type Talk = {
@@ -27,5 +28,5 @@ export type Talk = {
 export type Speaker = {
     title: string;
     name: string;
-    image: string;
+    imageUrl: string;
 }

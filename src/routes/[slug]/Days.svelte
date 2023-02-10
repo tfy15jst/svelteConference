@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { Day } from "$lib/types";
+    import Speakers from "./Speakers.svelte";
     import Talks from "./Talks.svelte";
     export let days: Day[];
 </script>
@@ -14,6 +15,7 @@
             <h1><span>{day.title}</span></h1>
             <h2><span>{day.description}</span></h2>
             <Talks talks={day.talks}/>
+            <Speakers speakers={day.speakers}/>
         </li>
     </div>
     {/each}

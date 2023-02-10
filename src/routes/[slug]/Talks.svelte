@@ -1,6 +1,8 @@
 <script lang="ts">
     import type { Talk } from "$lib/types";
+    import Speakers from "./Speakers.svelte";
     export let talks: Talk[];
+    console.log(talks)
 </script>
 
 <div>
